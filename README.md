@@ -13,7 +13,7 @@
 * React-navigation
 * Lottie 
 * React-Native-vector-icons
-* axisos
+* axios
 * React-native-config
 * React-redux
 * .env
