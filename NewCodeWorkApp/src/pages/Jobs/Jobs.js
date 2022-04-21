@@ -1,5 +1,5 @@
 import React,{useState} from "react";
-import {View,Text,FlatList} from 'react-native';
+import {View,Text,FlatList,StatusBar} from 'react-native';
 import Config from "react-native-config";
 import JobCard from "../../components/JobCard/JobCard";
 import useFetch from "../../hooks/useFetch/useFetch";
@@ -39,6 +39,7 @@ const Jobs = ({navigation}) => {
     <JobCard job={item} onPress={()=>handlegoDetail(item)}/>)
     return(
         <View style={styles.container} >
+            <StatusBar backgroundColor='tomato' />
            <FlatList
            data={data.results}
            renderItem={renderJobItem}
